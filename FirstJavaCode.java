@@ -1,31 +1,19 @@
 class FirstJavaCode
 {
 
-         public static void main(String...args)
-         {
+          public static void main(String[] args) {
+    
+    int num1 = 10;
+    int num2 = 20 ;
+                   
+    Main obj = new Main();
+    int result = obj.addNumbers(num1, num2);
+    System.out.println("Sum is: " + result);
+    }                   
+    
+  public int addNumbers(int a, int b) {
+    int sum = a + b;
+    return sum;
+  }
 
-          System.out.println("Hello to Java Programming World");  
-          FirstJavaCode fjc = new FirstJavaCode();
-                 fjc.show();
-           fjc.otherMethod(); 
-                 fjc.newMethod();
-          }
-         
-         public void show(){
-  System.out.println("Second Code Hello!!");
-}
-              
-          
-         
-         void otherMethod()
-         {
-          System.out.println("Hello its otherMethod from thinkbot");  
-                    
-                  
-         }
-         void newMethod()
-         {
-                  System.out.println("Hello this is a new small change from akhil");
-         }
-       
 }
